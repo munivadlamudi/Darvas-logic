@@ -8,7 +8,7 @@ def darvas_box_strategy(stock_symbol, start_date, end_date):
     data['High_box'] = data['High'].rolling(window=60).max()  # High box level (60-day rolling max)
     data['Low_box'] = data['Low'].rolling(window=60).min()    # Low box level (60-day rolling min)
     
-    # Identify Buy and Sell signals
+    # Identify Buy and Sell signals 
     data['Buy_signal'] = (data['Close'] > data['High_box'].shift(1)) & (data['Volume'] > data['Volume'].mean())
     data['Sell_signal'] = (data['Close'] < data['Low_box'].shift(1))
     

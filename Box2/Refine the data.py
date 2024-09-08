@@ -13,7 +13,7 @@ df_filtered = df_sorted.drop_duplicates(subset=['Stock Symbol', 'Exit Date'], ke
 # Step 3: Sort the filtered data by 'Stock Symbol' and 'Entry Date' in descending order
 df_filtered_sorted = df_filtered.sort_values(by=['Stock Symbol', 'Entry Date'], ascending=[True, False])
 
-# Save the refined data to a new Excel file (optional)
+# Save the refined data to a new Excel file (optional) 
 output_path = 'Reports/refined_output.xlsx'
 df_filtered_sorted.to_excel(output_path, index=False)
 

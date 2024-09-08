@@ -14,7 +14,7 @@ def darvas_box_strategy(stock_symbol, start_date, end_date):
     return data
 
 def get_latest_price(stock_symbol):
-    # Fetch the latest price for the stock
+    # Fetch the latest price for the stock 
     ticker = yf.Ticker(stock_symbol)
     latest_data = ticker.history(period="1d")
     if not latest_data.empty:

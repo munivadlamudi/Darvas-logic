@@ -18,7 +18,7 @@ def darvas_box_strategy(stock_symbol, start_date, end_date):
 stocks_df = pd.read_csv('stock_symbols.csv')  # Adjust the filename to your actual file
 stock_symbols = stocks_df['stock_symbol'].tolist()  # Assuming the column name is 'stock_symbol'
 
-# Set date range for fetching data
+# Set date range for fetching data 
 start_date = '2018-01-01'
 end_date = '2024-09-08'
 

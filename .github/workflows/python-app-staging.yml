@@ -3,7 +3,7 @@ name: Staging Run Python Code
 on:
   push:
     branches:
-      - staging
+      - master
   workflow_dispatch:
 
 jobs:

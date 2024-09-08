@@ -38,7 +38,7 @@ def upload_to_drive(drive, folder_name, file_path):
     file_drive.Upload()
     print(f'Uploaded file: {file_drive["title"]}')
 
-# Function to send an email with a message and DataFrame content
+#  Function to send an email with a message and DataFrame content
 def send_email_with_report(df_filtered):
     SCOPES = ["https://www.googleapis.com/auth/gmail.send", "https://www.googleapis.com/auth/drive.file"]
 

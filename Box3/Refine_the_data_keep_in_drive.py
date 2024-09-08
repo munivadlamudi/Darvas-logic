@@ -108,7 +108,7 @@ def main():
     upload_to_drive(drive, 'Market Tracker', output_path)  # Ensure 'Market Tracker' folder exists in your Drive
 
     # Step 7: Optionally, send an email with the report
-    # send_email_with_report(df_filtered_sorted)
+    # send_email_with_report(df_filtered_sorted) 
 
 if __name__ == "__main__":
     main()
