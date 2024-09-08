@@ -1,6 +1,6 @@
 import pandas as pd
 import yfinance as yf
-
+import subprocess
 def darvas_box_strategy(stock_symbol, start_date, end_date):
     # Fetch historical data for the stock
     data = yf.download(stock_symbol, start=start_date, end=end_date)
@@ -84,3 +84,4 @@ report_df = report_df.sort_values(by=['Stock Symbol', 'Entry Date'], ascending=[
 # Save the report to Excel
 report_df.to_excel('Reports/Darvas_Box_Trade_Combined_Report.xlsx', index=False)
 print("Report saved as 'Darvas_Box_Trade_Combined_Report.xlsx'")
+subprocess.run(["python", "Refine_the_data_keep_in_drive.py"])

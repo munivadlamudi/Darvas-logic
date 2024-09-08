@@ -1,0 +1,14 @@
+yfinance
+pandas
+openpyxl
+pandas_ta
+numpy==1.23.5
+google-auth-oauthlib==0.8.0
+google-api-python-client
+pydrive
+google-auth-httplib2
+google-auth
+google-auth 
+google-auth-oauthlib 
+google-auth-httplib2 
+google-api-python-client
