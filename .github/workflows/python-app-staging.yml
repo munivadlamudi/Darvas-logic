@@ -14,7 +14,7 @@ jobs:
         script: [
           'Box1/darvas_logic',
           'Box2/darvas_logic',
-          'Box2/darvas_logic'
+          'Box3/darvas_logic'
         ]
 
     steps:
