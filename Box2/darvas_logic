@@ -24,7 +24,7 @@ def get_latest_price(stock_symbol):
     return None
 
 # Read stock symbols from CSV
-stocks_df = pd.read_csv('stock_symbols.csv')  # Adjust the filename to your actual file
+stocks_df = pd.read_csv('Box2/stock_symbols.csv')  # Adjust the filename to your actual file
 stock_symbols = stocks_df['stock_symbol'].tolist()  # Assuming the column name is 'stock_symbol'
 
 # Set date range for fetching data
