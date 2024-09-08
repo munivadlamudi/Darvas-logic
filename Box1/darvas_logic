@@ -83,6 +83,6 @@ report_df = pd.DataFrame(report_data, columns=['Stock Symbol', 'Entry Date', 'En
 report_df = report_df.sort_values(by=['Stock Symbol', 'Entry Date'], ascending=[True, False])
 
 # Save the report to Excel
-report_df.to_excel('Reports/Darvas_Box_Trade_Combined_Report.xlsx', index=False)
+report_df.to_excel('Box1/Reports/Darvas_Box_Trade_Combined_Report.xlsx', index=False)
 print("Report saved as 'Darvas_Box_Trade_Combined_Report.xlsx'")
 subprocess.run(["python", "Refine_the_data_keep_in_drive.py"])
