@@ -12,9 +12,9 @@ jobs:
     strategy:
       matrix:
         script: [
-          'Box1/darvas logic',
-          'Box2/darvas logic',
-          'Box2/darvas logic'
+          'Box1/darvas_logic',
+          'Box2/darvas_logic',
+          'Box2/darvas_logic'
         ]
 
     steps:
